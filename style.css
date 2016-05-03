@@ -1,0 +1,130 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin-top: 3%;
+}
+@font-face {
+	font-family: bebas;
+	src:url(bebas_neue.ttf);
+}
+
+h1,h2 {
+	font-family: bebas, sans-serif;
+	font-size: 6em;
+	letter-spacing: .3em;
+	text-align: center;
+	
+}
+
+h3 {
+	font-family: bebas, sans-serif;
+	font-size: 4em;
+	letter-spacing: .3em;
+	text-align: center;
+	
+}
+span {
+	width: 50%;
+	float: left;
+}
+
+p {
+	font-family: bebas, sans-serif;
+	font-size: 3em;
+	text-align: center;
+	
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  perspective: 800px; /*set perspective distance*/
+  float: left;
+}
+#gameboard {
+	width: 600px;
+	height: 425px;
+	margin: auto;
+	perspective: 800px;
+	text-align: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute; /*relative to first non-static parent*/
+  transform-style: preserve-3d;
+  transition-property: transform, opacity, background-color;
+  transition-duration: 1s;
+}
+
+.front, .back {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden; /*don't show from behind*/
+}
+
+.front {
+  transition: background 1s;
+  background: black;
+}
+
+.front:hover {
+  background: #7A80B4;
+	
+}
+.back {
+  transform: rotateY(180deg);
+}
+
+.selected {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: black;
+  transform-style: preserve-3d;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.selected2 {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: black;
+  transform-style: preserve-3d;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.done {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: black;
+  transform-style: preserve-3d;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+#win {
+	display:none;
+}
+h2#winmessage{
+	padding-top: 10%;
+	font-family: bebas, sans-serif;
+	font-size: 4em;
+	text-align: center;
+	
+}
+
+#replay {
+	transition: opacity 1s;
+}
