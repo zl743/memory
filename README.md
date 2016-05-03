@@ -23,6 +23,8 @@ Exploring JavaScript randomness through randomly placing images inside of styled
 
 ##Misc
 * Images were taken from my random background dump on my computer
+
 * Sounds were taken as free stock sounds then edited on Adobe Audition for a more suitable sound for the specific action
+
 * If you want to cheat, you can open the console log and check the array position for each image string
 
