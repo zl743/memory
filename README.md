@@ -16,7 +16,7 @@ Exploring JavaScript randomness through randomly placing images inside of styled
   * You are prompted to play again. The 'Play Again' text is actually an SVG image that you can click to reload the game.
 
 ##Randomness
-* I created 3 arrays: two arrays each for a set of random numbers 1-6, and an images array that would create html img strings based on the numbers generated. 
+* I created 3 arrays: two arrays each for a set of random numbers 1-6, and an images array that would store html img strings i created based on the numbers generated. 
   * The reason I needed two random number arrays is to ensure that there are exactly two of each number in the images array.
   * After generating these random numbers and using string manipulation to put image tags into my images array, I shuffled the position of the images using a for loop.
   * The innerHTML of each div tag was assigned an image based on the array index position.
