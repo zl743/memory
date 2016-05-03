@@ -7,7 +7,7 @@ Exploring JavaScript randomness through randomly placing images inside of styled
 
 ##How it works
 
-* Click an image to select it, then click another. If both divs display the same image, then the opacity of the div is set to 0, meaning   they technically disappear.
+* Click a black div card to select it, then click another. If both divs display the same image, then the opacity of the div is set to 0, meaning   they technically disappear.
   * When this happens, your score goes up by 2: you get 1 point for each card that has disappeared. 
   * Whenever a click or disappearing action occurs, a sound will occur. I edited these sounds using Adobe Audition and made them play using Javascript audio functions.
 
